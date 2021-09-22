@@ -1,0 +1,251 @@
+html{
+    font-size: 16px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    max-width: 1366px;
+    margin: auto;
+    padding: 0 20px;
+}
+.d-flex{
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+/* Header Menu */
+header{
+    background: #22c3a3;
+}
+.header-menu{
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{}
+.logo a{
+    color: #fff;
+    font-size: 2.5rem;
+}
+.main-menu{}
+.main-menu ul{
+    list-style: none;
+}
+.main-menu ul li{}
+.main-menu ul li a{
+    display: block;
+    padding: 1rem .5rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+.main-menu ul li a{}
+/* Banner Section */
+.banner-section{
+    background: url(./header-bg01.jpg) no-repeat center center;
+    background-size: cover;
+    height: 95vh;
+    min-height: 300px;
+}
+.banner-section .container{
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.banner-content{
+    color: #fff;
+    text-align: center;
+}
+.banner-content h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.banner-content h5{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.default-btn{
+    display: inline-block;
+    padding: .7rem 1.2rem;
+    color: #fff;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+}
+/* service-section */
+.service-section{
+    padding: 3rem 0;
+    border-bottom: 1px solid #0dbf9b;
+}
+.heading{
+    text-align: center;
+}
+.heading h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.heading p{
+    color: #606060;
+}
+.service-items{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.service-item{
+    flex-basis: 23%;
+    text-align: center;
+    padding: 1rem;
+}
+.service-item span{
+    font-size: 3rem;
+    color: #0dbf9b;
+}
+.service-item h4{
+    font-size: 1.5rem;
+    margin: 1.3rem 0;
+}
+.service-item p{
+    color: #606060;
+    line-height: 1.5rem;
+}
+/* About Section */
+.about-section{
+    padding: 3rem 0;
+}
+.about-content{
+    margin-top: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-inner-img{
+    flex-basis: 45%;
+    padding-right: 20px;
+}
+.about-inner-text{
+    flex-basis: 55%;
+    color: #606060;
+    padding: 16px;
+}
+.about-inner-text h4{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.about-inner-text p{
+    margin-bottom: 2rem;
+}
+/* Contact Section */
+.contact-section{
+    padding: 3rem 0;
+    background: #f6f6f6;
+}
+.contact-items{
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+.contact-item{
+    flex-basis: 30%;
+    text-align: center;
+}
+.contact-item span{
+    color: #0dbf9b;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.contact-item p{
+    color: #606060;
+}
+.contact-item a{
+    color: #606060;
+    display: block;
+}
+/* Footer */
+.footer-top{
+    background: #0dbf9b;
+}
+.social-menu{
+    list-style: none;
+    justify-content: center;
+    padding: .5rem 0;
+}
+.social-menu li a{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #fff;
+    border-radius: 50%;
+    margin: 5px;
+    color: #0dbf9b;
+}
+.footer-bottom{
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+}
+/* Responsive CSS */
+@media all and (max-width:1366px) {
+    .about-inner-img{
+        flex-basis: 50%;
+    }
+    .about-inner-text{
+        flex-basis: 50%;
+        padding: 8px;
+    }
+    .about-inner-text h4{
+        font-size: 1.2rem;
+        margin-bottom: .7rem;
+    }
+    .about-inner-text p{
+        margin-bottom: 1rem;
+    }
+}
+@media all and (max-width:1120px) {
+    .about-inner-img{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .about-inner-text{
+        flex-basis: 100%;
+        padding: 1rem;
+    }
+}
+@media all and (max-width:992px) {
+    .service-item {
+        flex-basis: 48%;
+        padding: 2rem;
+        margin-bottom: 10px;
+    }
+    .logo {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .main-menu{
+        flex-basis: 100%;
+    }
+    .main-menu ul {
+        list-style: none;
+        justify-content: center;
+    }
+    .banner-content h1 {
+        font-size: 3rem;
+    }
+    .banner-content h5 {
+        font-size: 1.5rem;
+    }
+}
+@media all and (max-width:550px){
+    html{
+        font-size: 12px;
+    }
+}
